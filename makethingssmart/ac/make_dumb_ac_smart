@@ -49,3 +49,9 @@ climate:
       seconds: 1
     initial_hvac_mode: "off"
     target_temp: 22.5
+
+
+homekit:
+  - filter:
+      include_entities:
+        - climate.klimaanlage
