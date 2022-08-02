@@ -1,0 +1,40 @@
+type: custom:layout-card
+layout_type: custom:masonry-layout
+layout:
+  width: 270
+  max_cols: 1
+cards:
+  - type: custom:mushroom-title-card
+    title: Raumklima
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-entity-card
+        entity: sensor.a4c13891cae3_temperature
+        layout: vertical
+        icon_color: light-blue
+      - type: custom:mushroom-entity-card
+        entity: sensor.klimaanlage_sensor_temperature
+        layout: vertical
+        icon_color: light-blue
+        name: Wohnzimmer
+      - type: custom:mushroom-entity-card
+        layout: vertical
+        icon_color: light-blue
+        entity: sensor.a4c138c1e0a8_temperature
+        name: Eingang
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-entity-card
+        layout: vertical
+        icon_color: cyan
+        entity: sensor.a4c138227255_humidity
+      - type: custom:mushroom-entity-card
+        layout: vertical
+        icon_color: cyan
+        entity: sensor.klimaanlage_sensor_humidity
+        name: Wohnzimmer
+      - type: custom:mushroom-entity-card
+        entity: sensor.a4c138c1e0a8_humidity
+        layout: vertical
+        name: Eingang
+        icon_color: cyan
