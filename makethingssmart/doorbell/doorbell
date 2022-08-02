@@ -1,3 +1,5 @@
+########## SCRIPT ############
+
 alias: Doorbell
 sequence:
   - service: media_player.volume_set
@@ -17,3 +19,20 @@ sequence:
         - media_player.bett
 mode: single
 icon: mdi:doorbell
+
+########## AUTOMATION ############
+
+alias: Doorbell Button
+description: ''
+mode: single
+trigger:
+  - platform: device
+    domain: mqtt
+    device_id: ab61c610004c17a2039ee965f7ec3bc1
+    type: action
+    subtype: 'on'
+    discovery_id: 0x04cd15fffe2d36c3 action_on
+condition: []
+action:
+  - service: script.doorbell
+    data: {}
