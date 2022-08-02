@@ -1,0 +1,25 @@
+type: custom:layout-card
+layout_type: custom:masonry-layout
+cards:
+  - type: custom:mushroom-title-card
+    title: Klimaanlage
+    alignment: center
+  - type: horizontal-stack
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: custom:mushroom-entity-card
+            entity: sensor.klimaanlage_sensor_humidity
+            layout: vertical
+            name: Feuchtigkeit
+            fill_container: false
+            icon_color: cyan
+          - type: custom:mushroom-entity-card
+            entity: sensor.klimaanlage_sensor_temperature
+            layout: vertical
+            name: Temperatur
+      - type: thermostat
+        entity: climate.klimaanlage
+layout:
+  width: 270
+  max_cols: 1
