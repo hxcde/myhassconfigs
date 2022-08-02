@@ -1,0 +1,12 @@
+  - platform: template
+    sensors:
+
+# Use it to change the State Name
+
+      securitycamera:
+        value_template:  '{% if is_state("device_tracker.security_camera", "home") %} Online {% else %} Offline {%- endif %}'
+
+# Or use it to change the language
+
+      myphone:
+        value_template:  '{% if is_state("device_tracker.myphone", "home") %} Anwesend {% else %} Abwesend {%- endif %}'
