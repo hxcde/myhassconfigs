@@ -4,7 +4,8 @@ Most solutions in making air conditioners smart require a remote control with a 
 ### What do you need?
 To control your air conditioner and get feedback you need a univeral infrared remote control and a smart plug that can measure the power consumption. Do do this I used:
 - A broadlink RM Mini 3 to send the IR command to the AC
-- A NOUS A1 with Tasmota to measure the current energy consumption,
+- A NOUS A1 with Tasmota to measure the current energy consumption
+- A zigbee temperature sensor
 
 ### How to set it up?
 1. First of all, the IR remote control must be integrated into Home Assistant. With the RM mini 3, the integrated Broadlink plugin could be used.
