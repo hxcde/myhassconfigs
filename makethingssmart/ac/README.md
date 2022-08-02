@@ -1,4 +1,5 @@
-## How to make your dumb air conditioner smart in Home Assistant!
+## How to make your dumb IR controlled air conditioner smart in Home Assistant!
+Most solutions in making air conditioners smart require a remote control with a screen. This solution does not need that.
 
 ### What do you need?
 To control your air conditioner and get feedback you need a univeral infrared remote control and a smart plug that can measure the power consumption. Do do this I used:
