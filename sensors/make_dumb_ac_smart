@@ -1,0 +1,51 @@
+# Make dumb air conditioner smart
+
+
+# Send IR command with script
+
+sequence:
+  - service: remote.send_command
+    target:
+      device_id: 1ca24041220f1543cd39c537fca39255
+    data:
+      device: klimaanlage
+      command: Power
+
+# Make a switch from the script
+
+switch:
+  - platform : template
+    switches:
+      klimas_power:
+        value_template: "{{ is_state('binary_sensor.klimas', 'on') }}"
+        turn_on:
+          service: script.klimaanlage
+        turn_off:
+          service: script.klimaanlage
+
+# A/C state from outlet
+
+binary_sensor:
+  - platform: template
+    sensors:
+      klimas:
+        friendly_name: "Klimaanlagen Status"
+        value_template: "{{ states('sensor.tasmota_energy_power')|float > 70 }}"
+
+
+# Setup Generic Thermostat
+
+climate:
+  - platform: generic_thermostat
+    name: Klimaanlage
+    heater: switch.klimas_power
+    target_sensor: sensor.klimaanlage_sensor_temperature
+    ac_mode: true
+    min_temp: 16
+    hot_tolerance: 0
+    cold_tolerance: 0
+    max_temp: 30
+    min_cycle_duration:
+      seconds: 1
+    initial_hvac_mode: "off"
+    target_temp: 22.5
