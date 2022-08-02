@@ -5,4 +5,4 @@
 
 1. Create a [script](https://github.com/hxcde/myhassconfigs/blob/190e841e7040152a5c1d2fa8ffe77ec759a85177/makethingssmart/doorbell/doorbell#L1) that play the bell on you media players.
 2. Create an [automation](https://github.com/hxcde/myhassconfigs/blob/190e841e7040152a5c1d2fa8ffe77ec759a85177/makethingssmart/doorbell/doorbell#L23) that binds a button to the script.
-3. You can add the Script to HomeKit 
+3. For Homekit you need to create a dummy switch, that switches back after some seconds.
