@@ -1,0 +1,99 @@
+type: custom:fluid-level-background-card
+card:
+  type: custom:layout-card
+  layout_type: custom:masonry-layout
+  layout:
+    width: 285
+    max_cols: 10
+  cards:
+    - type: custom:hui-entities-card
+      title: Intel NUC - Home Assistant OS
+      entities:
+        - type: custom:vertical-stack-in-card
+          cards:
+            - type: custom:gap-card
+              height: 5
+            - type: horizontal-stack
+              cards:
+                - type: picture
+                  image: /local/medien/nuc_front.png
+                - type: custom:button-card
+                  layout: icon_name_state2nd
+                  show_icon: true
+                  show_state: true
+                  styles:
+                    grid:
+                      - grid-template-columns: 50px auto
+                    icon:
+                      - padding: 15px 10px
+                      - height: 30px
+                      - width: 30px
+                    card:
+                      - '--ha-card-background': rgba(0, 0, 0, 0.0)
+                      - '--ha-card-box-shadow': none
+                    state:
+                      - padding: 0px 0px
+                      - justify-self: start
+                      - font-family: Roboto, sans-serif
+                      - font-size: 15px
+                    name:
+                      - padding: 0px 0px
+                      - justify-self: start
+                      - color: var(--secondary-text-color)
+                  entity: sensor.cpu_temp
+                  name: CPU Temperatur
+                  icon: mdi:fire
+            - type: custom:gap-card
+              height: 10
+      show_header_toggle: true
+      state_color: false
+      theme: synthwave
+    - type: custom:layout-card
+      layout_type: masonry
+      layout:
+        width: 230
+      cards:
+        - type: vertical-stack
+          cards:
+            - type: horizontal-stack
+              cards:
+                - type: custom:mushroom-entity-card
+                  entity: sensor.processor_use
+                  icon_color: cyan
+                  name: CPU
+                  fill_container: false
+                  layout: vertical
+                - type: custom:mushroom-entity-card
+                  entity: sensor.memory_use_percent
+                  icon_color: cyan
+                  name: RAM
+                  layout: vertical
+                - type: custom:mushroom-entity-card
+                  entity: sensor.disk_use_percent
+                  icon_color: cyan
+                  layout: vertical
+                  name: SSD
+            - type: horizontal-stack
+              cards:
+                - type: custom:mushroom-entity-card
+                  entity: sensor.last_boot
+                  icon_color: green
+                  layout: vertical
+                  name: Neustart
+                - type: custom:mushroom-entity-card
+                  entity: binary_sensor.smart_home
+                  icon_color: green
+                  layout: vertical
+                  name: Internet
+                - type: custom:mushroom-entity-card
+                  name: OS Version
+                  icon: mdi:update
+                  icon_color: green
+                  fill_container: false
+                  entity: update.home_assistant_operating_system_update
+                  layout: vertical
+entity: sensor.memory_use_percent
+level_color:
+  - 61
+  - 78
+  - 108
