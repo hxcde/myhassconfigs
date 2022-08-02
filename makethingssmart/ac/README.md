@@ -1,3 +1,4 @@
+<img src="https://user-images.githubusercontent.com/30338980/182388263-f69cb425-56a2-4b70-89dd-52ae4b0bda3c.png" width="70" /> <img src="https://user-images.githubusercontent.com/30338980/182389009-98f48692-3752-4e14-9a2a-4f16fbe152f3.png" width="70" />
 ## How to make your dumb IR controlled air conditioner smart in Home Assistant!
 Most solutions in making air conditioners smart require a remote control with a screen. This solution does not need that.
 #### This is also working in HomeKit!
