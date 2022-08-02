@@ -5,7 +5,7 @@
 > This is a collection of Home Assistant config files and examples.
 
 #### Make things Smart
-- [Make your dumb air conditioner smart!](https://github.com/hxcde/myhassconfigs/blob/main/makethingssmart/make_dumb_ac_smart)
+- [Make your dumb air conditioner smart!](https://github.com/hxcde/myhassconfigs/blob/main/makethingssmart/ac/make_dumb_ac_smart)
 #### Dashboard:
 - [A monitoring dashboard for the Home Assistant host](https://github.com/hxcde/myhassconfigs/tree/main/dashboards/monitoring)
 - [A card example to make your home dashboard clearer.](https://github.com/hxcde/myhassconfigs/blob/main/dashboards/homedash/)
