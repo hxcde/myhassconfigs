@@ -6,6 +6,7 @@
 
 #### Make things Smart
 - [Make your dumb air conditioner smart!](https://github.com/hxcde/myhassconfigs/blob/main/makethingssmart/ac/)
+- [Create a smart doorbell.](https://github.com/hxcde/myhassconfigs/tree/main/makethingssmart/doorbell)
 #### Dashboard:
 - [A monitoring dashboard for the Home Assistant host](https://github.com/hxcde/myhassconfigs/tree/main/dashboards/monitoring)
 - [A card example to make your home dashboard clearer.](https://github.com/hxcde/myhassconfigs/blob/main/dashboards/homedash/)
