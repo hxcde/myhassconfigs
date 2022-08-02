@@ -16,4 +16,5 @@ To control your air conditioner and get feedback you need a univeral infrared re
 6. Last, a [generic_thermostat](https://github.com/hxcde/myhassconfigs/blob/ad97530c21af6a94b9b02c949569915ce940f58e/makethingssmart/ac/make_dumb_ac_smart#L39) must be created. To do this, enter the switch entity and the temperature sensor entity in the config. All the settings can be found [here](https://www.home-assistant.io/integrations/generic_thermostat/).
 
 ![smart_ac](https://user-images.githubusercontent.com/30338980/182379836-adff2fdc-9d22-4c71-b47b-2cfce0b6c779.png)
+
 This card config can be found [here](https://github.com/hxcde/myhassconfigs/blob/main/makethingssmart/ac/ac_dashboard_card).
