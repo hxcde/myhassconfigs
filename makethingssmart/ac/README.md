@@ -16,6 +16,7 @@ To control your air conditioner and get feedback you need a univeral infrared re
 4. Create a [binary_sensor](https://github.com/hxcde/myhassconfigs/blob/ad97530c21af6a94b9b02c949569915ce940f58e/makethingssmart/ac/make_dumb_ac_smart#L28) that detects if the device is on or off based on the energy consumption. 
 5. Now create a [switch](https://github.com/hxcde/myhassconfigs/blob/ad97530c21af6a94b9b02c949569915ce940f58e/makethingssmart/ac/make_dumb_ac_smart#L16) consisting of the [binary_sensor](https://github.com/hxcde/myhassconfigs/blob/ad97530c21af6a94b9b02c949569915ce940f58e/makethingssmart/ac/make_dumb_ac_smart#L28) and the [remote.send_command script](https://github.com/hxcde/myhassconfigs/blob/ad97530c21af6a94b9b02c949569915ce940f58e/makethingssmart/ac/make_dumb_ac_smart#L6). This can switch the air conditioner, and can detect its state.
 6. Last, a [generic_thermostat](https://github.com/hxcde/myhassconfigs/blob/ad97530c21af6a94b9b02c949569915ce940f58e/makethingssmart/ac/make_dumb_ac_smart#L39) must be created. To do this, enter the switch entity and the temperature sensor entity in the config. All the settings can be found [here](https://www.home-assistant.io/integrations/generic_thermostat/).
+7. To add it to Homekit, just add it to the [homekit config](https://github.com/hxcde/myhassconfigs/blob/adef80644e38d652a4d81ddd885fea02e7198bbe/makethingssmart/ac/make_dumb_ac_smart#L54).
 
 ![smart_ac](https://user-images.githubusercontent.com/30338980/182379836-adff2fdc-9d22-4c71-b47b-2cfce0b6c779.png)
 
