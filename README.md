@@ -4,7 +4,7 @@
 
 > This is a collection of Home Assistant config files and examples.
 
-#### Make things Smart:
+#### Make things smart:
 - <img src="https://user-images.githubusercontent.com/30338980/182388263-f69cb425-56a2-4b70-89dd-52ae4b0bda3c.png" width="15" /> <img src="https://user-images.githubusercontent.com/30338980/182389009-98f48692-3752-4e14-9a2a-4f16fbe152f3.png" width="15" /> [Make your dumb air conditioner smart!](https://github.com/hxcde/myhassconfigs/blob/main/makethingssmart/ac/)
 - <img src="https://user-images.githubusercontent.com/30338980/182402058-6cd045f7-cd5b-405c-8444-e505f25407ae.png" width="15" /> <img src="https://user-images.githubusercontent.com/30338980/182389009-98f48692-3752-4e14-9a2a-4f16fbe152f3.png" width="15" /> [Create a smart doorbell.](https://github.com/hxcde/myhassconfigs/tree/main/makethingssmart/doorbell)
 #### Dashboard:
