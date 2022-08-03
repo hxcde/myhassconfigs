@@ -1,4 +1,4 @@
-## Home Card
+## Home card example
 A card example to make your home dashboard clearer.
 
 
