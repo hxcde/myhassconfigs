@@ -1,2 +1,0 @@
-shell_command:
-  ring: "curl http://10.0.0.2:9091/door"
